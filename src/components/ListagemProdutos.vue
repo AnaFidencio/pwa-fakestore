@@ -24,7 +24,7 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
       </div>
     </div>
   </template>
-  <style scoped>
+  <style scoped > @media (max-width: 768px){
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +33,7 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
     align-items: center;
     margin: auto;
     padding: 1rem 0;
+    gap: 0.5rem;
   }
   .card {
     display: flex;
@@ -46,6 +47,7 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
     border-radius: 10px;
     margin: auto;
     overflow: hidden;
+    width: 92%;
   }
   .card--avatar {
     width: 100%;
@@ -60,5 +62,12 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
     font-size: 1.1rem;
     margin-top: 0.5rem;
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 22rem;
+  }
+}
+}
+
   </style>
   
